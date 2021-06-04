@@ -38,8 +38,8 @@ export default function App () {
       {/* <div>Replace this Div with your Routes</div> */}
 
       <Switch>
-        <Route path={`/movies/${movieList.id}`}>
-          <Movie />
+        <Route path={`/movies/:id`}>
+          <Movie id={movieList.id}/>
         </Route>
 
         <Route exact path="/">
